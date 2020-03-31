@@ -151,7 +151,7 @@ nav.navbarContainer {
   }
   .projectContainer {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
     width: 100%;
     margin-top: 20px;
     .card {
