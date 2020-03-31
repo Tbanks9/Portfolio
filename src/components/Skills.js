@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaNode, FaSass, FaGitAlt, FaGithub, FaBootstrap } from 'react-icons/fa'
-// import { IoLogoJavascript } from "react-icons/io"
 import { DiDjango, DiMongodb, DiPostgresql, DiHeroku, DiVisualstudio, DiJsBadge } from "react-icons/di"
 import { GiCoffeeCup } from "react-icons/gi"
 

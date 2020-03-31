@@ -1,6 +1,9 @@
 import React from 'react'
 import { animated, useSpring } from "react-spring";
 import { useScroll } from "react-use-gesture";
+import { DiHeroku } from "react-icons/di"
+import { FaGithub } from 'react-icons/fa'
+
 import shotSpot from '../assets/Shotspot.png'
 import chowVow from '../assets/Chow-vow.png'
 import geographyGenius from '../assets/Geography-genius-1.png'
@@ -32,28 +35,76 @@ const Projects = () => {
         <h2>PROJECTS</h2>
         <div className="projectContainer" {...bind()}>
           <animated.div className="card" style={{ ...style }}>
-            <a href="http://shotspot-photography.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <h3>SHOTSPOT - SEI PROJECT 4</h3>
               <img src={shotSpot} alt="Shotspot" />
-            </a>
+              <div className="projectLinks">
+              <div className="gitHubLink">
+                <a href="https://github.com/Tbanks9/Shotspot" target="_blank" rel="noopener noreferrer">
+                  <FaGithub className="projectIcon" />
+                  <p>GITHUB</p>
+                </a>
+              </div>
+              <div className="herokuLink">
+                <a href="https://shotspot-photography.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                  <DiHeroku className="projectIcon" />
+                  <p>HEROKU</p>
+                </a>
+              </div>
+            </div>
           </animated.div>
           <animated.div className="card" style={{ ...style }}>
-            <a href="https://chowvow.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-              <h3>CHOW VOW - SEI PROJECT 3</h3>
-              <img src={chowVow} alt="Chow Vow" />
-            </a>
+            <h3>CHOW VOW - SEI PROJECT 3</h3>
+            <img src={chowVow} alt="Chow Vow" />
+            <div className="projectLinks">
+              <div className="gitHubLink">
+                <a href="https://github.com/Tbanks9/Chow-Vow" target="_blank" rel="noopener noreferrer">
+                  <FaGithub className="projectIcon" />
+                  <p>GITHUB</p>
+                </a>
+              </div>
+              <div className="herokuLink">
+                <a href="https://chowvow.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                  <DiHeroku className="projectIcon" />
+                  <p>HEROKU</p>
+                </a>
+              </div>
+            </div>
           </animated.div>
           <animated.div className="card" style={{ ...style }}>
-            <a href="https://geography-genius.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-              <h3>GEOGRAPHY GENIUS - SEI PROJECT 2</h3>
-              <img src={geographyGenius} alt="Geography Genius" />
-            </a>
+            <h3>GEOGRAPHY GENIUS - SEI PROJECT 2</h3>
+            <img src={geographyGenius} alt="Geography Genius" />
+            <div className="projectLinks">
+              <div className="gitHubLink">
+                <a href="https://github.com/Tbanks9/Geography-genius" target="_blank" rel="noopener noreferrer">
+                  <FaGithub className="projectIcon" />
+                  <p>GITHUB</p>
+                </a>
+              </div>
+              <div className="herokuLink">
+                <a href="https://geography-genius.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                  <DiHeroku className="projectIcon" />
+                  <p>HEROKU</p>
+                </a>
+              </div>
+            </div>
           </animated.div>
           <animated.div className="card" style={{ ...style }}>
-            <a href="https://snake-project.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <h3>SNAKE - SEI PROJECT 1</h3>
               <img src={snake} alt="Snake" />
-            </a>
+              <div className="projectLinks">
+              <div className="gitHubLink">
+                <a href="https://github.com/Tbanks9/Snake" target="_blank" rel="noopener noreferrer">
+                  <FaGithub className="projectIcon" />
+                  <p>GITHUB</p>
+                </a>
+              </div>
+              <div className="herokuLink">
+                <a href="https://snake-project.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                  <DiHeroku className="projectIcon" />
+                  <p>HEROKU</p>
+                </a>
+              </div>
+            </div>
           </animated.div>
         </div>
       </section >

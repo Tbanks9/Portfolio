@@ -158,9 +158,9 @@ nav.navbarContainer {
       flex-shrink: 0;
       max-width: 650px;
       border: none;
-      max-height: 400px;
+      max-height: 600px;
       opacity: 0.9;
-      margin: 80px 20px;
+      margin: 60px 20px;
       background-size: cover;
       background-color: transparent;
       background-repeat: no-repeat;
@@ -180,6 +180,23 @@ nav.navbarContainer {
         border: solid 5px none;
         border-radius: 5px;
       }
+    }
+  }
+}
+
+div.projectLinks {
+  display: flex;
+  margin-right: 50px;
+  justify-content: center;
+  div.herokuLink, div.gitHubLink {
+    padding: 20px;
+    color: #1f363d;
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+    .projectIcon {
+      height: 50px;
+      width: 50px;
+      color: #1f363d;
     }
   }
 }
@@ -297,6 +314,7 @@ nav.navbarContainer {
       height: 900px;
       display: flex;
       align-items: center;
+      margin-top: 50px;
       .card {
         margin: 80px 50px;
         max-width: 920px;
@@ -306,8 +324,19 @@ nav.navbarContainer {
         }
         img {
           max-width: 920px;
-          margin-right: 50px;
+          // margin-right: 50px;
         }
+      }
+    }
+  }
+
+  div.projectLinks {
+    margin: 0;
+    div.herokuLink, div.gitHubLink {
+      font-size: 30px;
+      .projectIcon {
+        height: 100px;
+        width: 100px;
       }
     }
   }
@@ -366,12 +395,12 @@ nav.navbarContainer {
   .homeSection {
     .homeTitle {
       h3 {
-        font-size: 7rem;
+        font-size: 6rem;
         margin-bottom: 20px;
       }
       .typingEffect {
         margin-top: 20px;
-        font-size: 4rem;
+        font-size: 3rem;
       }
       .nextSection {
         margin-top: 250px;
@@ -408,18 +437,20 @@ nav.navbarContainer {
   }
 
   .projectsSection {
-    padding: 150px 0 40px;
+    padding: 140px 0 40px;
     h2 {
       margin: 10px 0;
       padding: 0;
       font-size: 4.5rem;
     }
     .projectContainer {
-      height: 650px;
+      height: 800px;
       display: flex;
       align-items: center;
+      margin-top: 30px;
       .card {
-        margin: 80px 50px;
+        margin: 20px 50px;
+        max-height: 800px;
         h3 {
           font-size: 2.5rem;
         }
@@ -427,6 +458,17 @@ nav.navbarContainer {
           max-width: 670px;
           margin-right: 50px;
         }
+      }
+    }
+  }
+
+  div.projectLinks {
+    margin-right: 50px;
+    div.herokuLink, div.gitHubLink {
+      font-size: 30px;
+      .projectIcon {
+        height: 100px;
+        width: 100px;
       }
     }
   }
@@ -446,7 +488,7 @@ nav.navbarContainer {
 
 @media only screen and (max-width: 576px) {
   nav.navbarContainer {
-    padding: 10px 20px 10px 0;
+    padding: 10px 20px;
     div.navEnd {
       display: flex;
       flex-direction: row;
@@ -504,7 +546,7 @@ nav.navbarContainer {
   }
 
   .projectsSection {
-    padding: 150px 0 40px;
+    padding: 130px 0 40px;
     h2 {
       margin: 10px 0;
       padding: 0;
@@ -512,7 +554,7 @@ nav.navbarContainer {
     }
     .projectContainer {
       height: 500px;
-      padding-bottom: 100px;
+      padding-bottom: 50px;
       margin: 0;
       .card {
         margin: 80px 20px;
@@ -521,9 +563,20 @@ nav.navbarContainer {
           margin-right: 20px;
         }
         img {
-          max-width: 330px;
+          max-width: 370px;
           margin-right: 20px;
         }
+      }
+    }
+  }
+
+  div.projectLinks {
+    margin: 0;
+    div.herokuLink, div.gitHubLink {
+      font-size: 16px;
+      .projectIcon {
+        height: 50px;
+        width: 50px;
       }
     }
   }
@@ -551,10 +604,156 @@ nav.navbarContainer {
             padding: 10px;
             height: 50px;
             width: 50px;
-            color: #f9f8f8;
           }
         }
       }
     }
   }
 }
+
+@media only screen and (max-width: 389px) {
+  nav.navbarContainer {
+    padding: 10px 5px;
+    div.navEnd {
+      font-size: 23px;
+      padding-right: 20px;
+    }
+    a.navLink {
+      font-size: 23px;
+    }
+  }
+
+  .homeSection {
+    .homeTitle {
+      margin-top: 20px;
+      h3 {
+        font-size: 3rem;
+      }
+      .typingEffect {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .projectsSection {
+    padding: 120px 0 40px;
+    h2 {
+      margin: 10px 0;
+      padding: 0;
+      font-size: 2.5rem;
+    }
+    .projectContainer {
+      height: 500px;
+      padding-bottom: 50px;
+      margin: 0;
+      .card {
+        margin: 80px 20px;
+        h3 {
+          font-size: 1rem;
+          margin-right: 20px;
+        }
+        img {
+          max-width: 330px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .contactSection {
+    padding: 40px 40px 100px;
+    .contactContainer {
+      padding: 5px;
+      .contactList {
+        .contactText {
+          padding: 0;
+          a {
+            font-size: 16px;
+          }
+          .contactIcon {
+            height: 45px;
+            width: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 369px) {
+  nav.navbarContainer {
+    div.navEnd {
+      font-size: 18px;
+    }
+    a.navLink {
+      font-size: 18px;
+    }
+  }
+
+  .aboutSection {
+    h2 {
+      font-size: 2.9rem;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 40px;
+    }
+    .aboutColumns {
+      margin-top: 30px;
+      font-size: 14px;
+      .aboutSkill {
+        margin: 5px 0;
+        .skillDiv {
+          padding: 0 5px;
+          font-size: 13px;
+          p {
+            margin-bottom: 10px;
+          }
+          svg.skillIcon {
+            padding: 5px;
+            height: 40px;
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .projectsSection {
+    padding: 80px 0 40px;
+    h2 {
+      margin: 10px 0;
+      padding: 0;
+      font-size: 2.5rem;
+    }
+    .projectContainer {
+      height: 500px;
+      padding-bottom: 50px;
+      margin: 0;
+      .card {
+        margin: 80px 20px;
+        h3 {
+          font-size: 1rem;
+          margin-right: 20px;
+        }
+        img {
+          max-width: 280px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  div.projectLinks {
+    margin-right: 20px;
+    div.herokuLink, div.gitHubLink {
+      font-size: 16px;
+      .projectIcon {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+}
+
+
