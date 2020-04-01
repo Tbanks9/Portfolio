@@ -2,7 +2,7 @@ import React from 'react'
 import { animated, useSpring } from "react-spring";
 import { useScroll } from "react-use-gesture";
 import { DiHeroku } from "react-icons/di"
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa'
 
 import shotSpot from '../assets/Shotspot.png'
 import chowVow from '../assets/Chow-vow.png'
@@ -32,12 +32,17 @@ const Projects = () => {
   return (
     <>
       <section className="projectsSection" id="projects">
-        <h2>PROJECTS</h2>
+        <h2> PROJECTS </h2>
+        <div className="sliderContainer">
+          <FaAngleDoubleLeft className="faa-passing" />
+          <h3> SWIPE </h3>
+          <FaAngleDoubleRight className="faa-passing-reverse" />
+        </div>
         <div className="projectContainer" {...bind()}>
           <animated.div className="card" style={{ ...style }}>
-              <h3>SHOTSPOT - SEI PROJECT 4</h3>
-              <img src={shotSpot} alt="Shotspot" />
-              <div className="projectLinks">
+            <h3>SHOTSPOT - SEI PROJECT 4</h3>
+            <img src={shotSpot} alt="Shotspot" />
+            <div className="projectLinks">
               <div className="gitHubLink">
                 <a href="https://github.com/Tbanks9/Shotspot" target="_blank" rel="noopener noreferrer">
                   <FaGithub className="projectIcon" />
@@ -89,9 +94,9 @@ const Projects = () => {
             </div>
           </animated.div>
           <animated.div className="card" style={{ ...style }}>
-              <h3>SNAKE - SEI PROJECT 1</h3>
-              <img src={snake} alt="Snake" />
-              <div className="projectLinks">
+            <h3>SNAKE - SEI PROJECT 1</h3>
+            <img src={snake} alt="Snake" />
+            <div className="projectLinks">
               <div className="gitHubLink">
                 <a href="https://github.com/Tbanks9/Snake" target="_blank" rel="noopener noreferrer">
                   <FaGithub className="projectIcon" />
