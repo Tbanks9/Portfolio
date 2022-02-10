@@ -10,7 +10,7 @@
     "bootstrap": "^4.4.1",
     "font-awesome-animation": "^0.2.1",
     "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-animated-css": "^1.2.1",
     "react-animated-css-onscroll": "^1.2.1",
